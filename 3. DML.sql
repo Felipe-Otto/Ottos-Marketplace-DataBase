@@ -3,44 +3,44 @@ USE OttosMarketplaceDB
 INSERT INTO 
 	Customer (FirstName, LastName, CustomerAddress, CustomerEmail, CustomerPhone)
 VALUES 
-    ('John', 'Doe', '123 Main St', 'john.doe@example.com', '555-123-4567'),
-    ('Jane', 'Smith', '456 Park Ave', 'jane.smith@example.com', '555-234-5678'),
-    ('Bob', 'Johnson', '789 Broadway', 'bob.johnson@example.com', '555-345-6789'),
-    ('Alice', 'Williams', '246 Elm St', 'alice.williams@example.com', '555-456-7890'),
-    ('Jack', 'Brown', '135 Pine Ave', 'jack.brown@example.com', '555-567-8901'),
-    ('Emily', 'Davis', '579 Oak St', 'emily.davis@example.com', '555-678-9012'),
-    ('Michael', 'Wilson', '468 Park Ave', 'michael.wilson@example.com', '555-789-0123'),
-    ('Sarah', 'Miller', '246 Elm St', 'sarah.miller@example.com', '555-890-1234'),
-    ('David', 'Taylor', '579 Oak St', 'david.taylor@example.com', '555-901-2345'),
-    ('Emma', 'Anderson', '468 Park Ave', 'emma.anderson@example.com', '555-012-3456');
+	('John', 'Doe', '123 Main St', 'john.doe@example.com', '555-123-4567'),
+	('Jane', 'Smith', '456 Park Ave', 'jane.smith@example.com', '555-234-5678'),
+	('Bob', 'Johnson', '789 Broadway', 'bob.johnson@example.com', '555-345-6789'),
+	('Alice', 'Williams', '246 Elm St', 'alice.williams@example.com', '555-456-7890'),
+	('Jack', 'Brown', '135 Pine Ave', 'jack.brown@example.com', '555-567-8901'),
+	('Emily', 'Davis', '579 Oak St', 'emily.davis@example.com', '555-678-9012'),
+	('Michael', 'Wilson', '468 Park Ave', 'michael.wilson@example.com', '555-789-0123'),
+	('Sarah', 'Miller', '246 Elm St', 'sarah.miller@example.com', '555-890-1234'),
+	('David', 'Taylor', '579 Oak St', 'david.taylor@example.com', '555-901-2345'),
+	('Emma', 'Anderson', '468 Park Ave', 'emma.anderson@example.com', '555-012-3456');
 
 INSERT INTO 
 	Position (PositionName)
 VALUES 
-    ('Software Engineer'),
-    ('Data Analyst'),
-    ('Sales Manager'),
-    ('Marketing Coordinator'),
-    ('Human Resources Specialist'),
-    ('Financial Analyst'),
-    ('Product Manager'),
-    ('Customer Support Representative'),
-    ('IT Administrator'),
-    ('Operations Manager');
+	('Software Engineer'),
+	('Data Analyst'),
+	('Sales Manager'),
+	('Marketing Coordinator'),
+	('Human Resources Specialist'),
+	('Financial Analyst'),
+	('Product Manager'),
+	('Customer Support Representative'),
+	('IT Administrator'),
+	('Operations Manager');
 
 INSERT INTO 
 	Employee (FirstName, LastName, EmployeeAddress, EmployeeEmail, EmployeePhone, PositionKey)
 VALUES 
-    ('John', 'Doe', '123 Main St', 'john.doe@example.com', '555-123-4567', 1),
-    ('Jane', 'Smith', '456 Park Ave', 'jane.smith@example.com', '555-234-5678', 2),
-    ('Bob', 'Johnson', '789 Broadway', 'bob.johnson@example.com', '555-345-6789', 3),
-    ('Alice', 'Williams', '246 Elm St', 'alice.williams@example.com', '555-456-7890', 4),
-    ('Jack', 'Brown', '135 Pine Ave', 'jack.brown@example.com', '555-567-8901', 5),
-    ('Emily', 'Davis', '579 Oak St', 'emily.davis@example.com', '555-678-9012', 6),
-    ('Michael', 'Wilson', '468 Park Ave', 'michael.wilson@example.com', '555-789-0123', 7),
-    ('Sarah', 'Miller', '111 Main St', 'sarah.miller@example.com', '555-890-1234', 8),
-    ('David', 'Taylor', '222 Park Ave', 'david.taylor@example.com', '555-901-2345', 9),
-    ('Emma', 'Anderson', '333 Oak St', 'emma.anderson@example.com', '555-012-3456', 10);
+	('John', 'Doe', '123 Main St', 'john.doe@example.com', '555-123-4567', 1),
+	('Jane', 'Smith', '456 Park Ave', 'jane.smith@example.com', '555-234-5678', 2),
+	('Bob', 'Johnson', '789 Broadway', 'bob.johnson@example.com', '555-345-6789', 3),
+	('Alice', 'Williams', '246 Elm St', 'alice.williams@example.com', '555-456-7890', 4),
+	('Jack', 'Brown', '135 Pine Ave', 'jack.brown@example.com', '555-567-8901', 5),
+	('Emily', 'Davis', '579 Oak St', 'emily.davis@example.com', '555-678-9012', 6),
+	('Michael', 'Wilson', '468 Park Ave', 'michael.wilson@example.com', '555-789-0123', 7),
+	('Sarah', 'Miller', '111 Main St', 'sarah.miller@example.com', '555-890-1234', 8),
+	('David', 'Taylor', '222 Park Ave', 'david.taylor@example.com', '555-901-2345', 9),
+	('Emma', 'Anderson', '333 Oak St', 'emma.anderson@example.com', '555-012-3456', 10);
 
 INSERT INTO 
 	Supplier (SupplierName, SupplierAddress, SupplierEmail, SupplierPhone) 
@@ -101,16 +101,16 @@ VALUES
 INSERT INTO 
 	[Order] (OrderDate, OrderStatus, TotalPrice, CustomerKey, StoreKey)
 VALUES 
-    ('2023-04-01', 'Pending', 50.00, 1, 1),
-    ('2023-03-30', 'Processing', 120.00, 2, 2),
-    ('2023-04-02', 'Shipped', 75.00, 3, 3),
-    ('2023-03-28', 'Delivered', 100.00, 4, 4),
-    ('2023-04-03', 'Cancelled', 150.00, 5, 5),
-    ('2023-04-05', 'Refunded', 25.00, 6, 6),
-    ('2023-03-27', 'On hold', 85.00, 7, 7),
-    ('2023-04-06', 'Backordered', 200.00, 8, 8),
-    ('2023-04-04', 'Returned', 30.00, 9, 9),
-    ('2023-04-07', 'Completed', 175.00, 10, 10),
+	('2023-04-01', 'Pending', 50.00, 1, 1),
+	('2023-03-30', 'Processing', 120.00, 2, 2),
+	('2023-04-02', 'Shipped', 75.00, 3, 3),
+	('2023-03-28', 'Delivered', 100.00, 4, 4),
+	('2023-04-03', 'Cancelled', 150.00, 5, 5),
+	('2023-04-05', 'Refunded', 25.00, 6, 6),
+	('2023-03-27', 'On hold', 85.00, 7, 7),
+	('2023-04-06', 'Backordered', 200.00, 8, 8),
+	('2023-04-04', 'Returned', 30.00, 9, 9),
+	('2023-04-07', 'Completed', 175.00, 10, 10),
 	('2023-04-07', 'Processing', 450.00, 3, 2),
 	('2023-04-06', 'Shipped', 235.00, 5, 1),
 	('2023-04-05', 'Delivered', 105.50, 2, 4),
@@ -124,16 +124,16 @@ VALUES
 
 INSERT INTO OrderItem (Quantity, UnitPrice, ProductKey, OrderKey)
 VALUES
-    (2, 25.00, 1, 1),
-    (3, 40.00, 2, 2),
-    (3, 25.00, 1, 3),
-    (2, 50.00, 3, 4),
-    (1, 100.00, 4, 5),
+	(2, 25.00, 1, 1),
+	(3, 40.00, 2, 2),
+	(3, 25.00, 1, 3),
+	(2, 50.00, 3, 4),
+	(1, 100.00, 4, 5),
 	(2, 50.00, 1, 5),
-    (1, 25.00, 1, 6),
+	(1, 25.00, 1, 6),
 	(2, 30.00, 5, 7),
 	(1, 25.00, 1, 7),
-    (2, 100.00, 4, 8),
+	(2, 100.00, 4, 8),
 	(1, 30.00, 5, 9),
 	(1, 150.00, 5, 10),
 	(1, 25.00, 1, 10),
